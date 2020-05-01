@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+#app {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.flexbox {
+  background: grey;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  width: 100%;
+  background: #111;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.error {
+  background-color: red !important;
+}
+
+nav {
+  margin-top: -10px;
+  background: orange;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+@media screen and (min-width: 850px) {
+  #app {
+    display: flex;
+    justify-content: space-around;
+  }
+  .flexbox {
+    width: 45%;
+  }
+  form {
+    justify-content: center;
+  }
+  nav {
+    position: sticky;
+    top: 5%;
+    left: 0;
+  }
+}
+
+img {
+  width: 50%;
+}
+a {
+  display: block;
+  color: black;
+}
+
+.active {
+  background-color: rgb(255, 0, 98);
+  font-weight: 600;
+  color: white;
+}
+
+.absolute {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 10000;
+}
+
+.button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002";
+}
+
+input[type="text"] {
+  padding-top: 15px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+  font-size: 1em;
+  width: 250px;
+  color: #eee;
+  transition: 0.25s ease-in-out;
+}
+input[type="text"]:focus {
+  border-bottom: 1px solid #eee;
+  color: #eee;
+}
